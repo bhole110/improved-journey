@@ -1,16 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title></title>
-
-<link rel="preconnect" href="https://t.me">
-<link rel="dns-prefetch" href="https://t.me">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<!-- Meta Pixel Code -->
+ <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -20,46 +11,64 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1947109456681923');
+fbq('init', '1241674591363698');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1947109456681923&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=1241674591363698&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+
+<title>Join Official Channel</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+-webkit-tap-highlight-color:transparent;
+}
 
 html,body{
-width:100%;
 height:100%;
 overflow:hidden;
-touch-action:none;
-background:linear-gradient(135deg,#1a0005,#3a000f,#120003);
+background:linear-gradient(135deg,#0f0f17,#1c1c2b,#141421);
+}
+
+body{
 display:flex;
 justify-content:center;
 align-items:center;
+min-height:100dvh;
 color:#fff;
 }
 
 .container{
-width:100%;
-max-width:360px;
-padding:20px;
-border-radius:18px;
+width:92%;
+max-width:380px;
+padding:28px 22px;
+border-radius:22px;
 background:rgba(255,255,255,0.05);
-backdrop-filter:blur(12px);
+backdrop-filter:blur(18px);
 border:1px solid rgba(255,255,255,0.08);
 text-align:center;
-box-shadow:0 0 15px rgba(255,0,60,0.25);
+box-shadow:0 15px 40px rgba(0,0,0,0.5);
 }
 
 .brand-title{
 font-size:22px;
 font-weight:800;
-color:#ff003c;
 margin-bottom:18px;
-text-shadow:0 0 6px rgba(255,0,60,0.5);
+background:linear-gradient(90deg,#ff416c,#ff4b2b);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
 }
 
 .logo-container{
@@ -68,8 +77,7 @@ height:110px;
 margin:0 auto 15px;
 border-radius:50%;
 overflow:hidden;
-border:2px solid rgba(255,0,60,0.4);
-box-shadow:0 0 8px rgba(255,0,60,0.35);
+border:3px solid rgba(255,255,255,0.1);
 }
 
 .logo-container img{
@@ -78,84 +86,89 @@ height:100%;
 object-fit:cover;
 }
 
+.bold-profit{
+font-size:15px;
+font-weight:700;
+color:#ff4b2b;
+margin-bottom:12px;
+}
+
 .timer-box{
 margin:12px 0;
-font-size:26px;
+font-size:24px;
 font-weight:800;
+color:#ff416c;
 letter-spacing:2px;
-color:#ff003c;
-text-shadow:0 0 6px rgba(255,0,60,0.6);
-transition:.3s;
 }
 
-.timer-warning{
-animation:pulseTimer .6s infinite alternate;
+.live-box{
+margin-bottom:18px;
+font-size:14px;
+font-weight:600;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:8px;
+opacity:.9;
 }
 
-@keyframes pulseTimer{
-from{transform:scale(1);}
-to{transform:scale(1.08);}
+.live-dot{
+width:8px;
+height:8px;
+background:#ff3b3b;
+border-radius:50%;
+animation:pulse 1s infinite;
 }
 
-.stars{
-color:#ffc107;
-font-size:20px;
-margin-bottom:15px;
+@keyframes pulse{
+0%{opacity:1;}
+50%{opacity:.3;}
+100%{opacity:1;}
+}
+
+.counter-number{
+font-weight:700;
+color:#ffcc33;
+transition:opacity .3s ease;
 }
 
 .cta-btn{
-position:relative;
-display:block;
 width:100%;
-padding:14px 0;
+padding:15px 0;
+border:none;
 border-radius:14px;
 font-size:16px;
-font-weight:800;
-color:#fff;
-border:none;
+font-weight:700;
 cursor:pointer;
-overflow:hidden;
 margin-bottom:12px;
-transition:transform .12s ease;
+transition:.2s ease;
 }
 
-.cta-btn:active{transform:scale(0.93);}
-
-.cta-btn.normal{
-background:linear-gradient(90deg,#ff003c,#ff4d6d);
-box-shadow:0 4px 12px rgba(255,0,60,0.3);
+.cta-btn.primary{
+background:linear-gradient(90deg,#ff416c,#ff4b2b);
+color:#fff;
 }
 
-.cta-btn.vip{
-background:linear-gradient(90deg,#ff9900,#ffcc00);
-box-shadow:0 4px 14px rgba(255,204,0,0.4);
+.cta-btn.secondary{
+background:linear-gradient(90deg,#ffb347,#ffcc33);
+color:#111;
 }
 
-.ripple{
-position:absolute;
-border-radius:50%;
-pointer-events:none;
-transform:scale(0);
-opacity:1;
-background:radial-gradient(circle,
-rgba(255,255,255,0.7) 0%,
-rgba(255,255,255,0.3) 40%,
-transparent 70%);
-animation:rippleFast .5s cubic-bezier(.4,0,.2,1);
+.cta-btn:active{
+transform:scale(0.96);
 }
 
-@keyframes rippleFast{
-to{transform:scale(4);opacity:0;}
+.footer-text{
+font-size:13px;
+opacity:.7;
+margin-top:10px;
 }
-
-.highlight-text{font-size:13px;margin-bottom:12px;}
-.bold-profit{font-weight:700;font-size:15px;margin-bottom:5px;text-transform:uppercase;color:#ff4d6d;}
-.emoji-text{font-size:13px;margin-bottom:15px;}
-.hurry-up{font-weight:800;font-size:16px;margin-top:8px;color:#ff003c;text-shadow:0 0 6px rgba(255,0,60,0.6);}
 </style>
 
 <script>
 let timeLeft = 30;
+let clickLocked = false;
+let liveCount;
 
 function startTimer(){
 const timer = document.getElementById("countdown");
@@ -164,44 +177,57 @@ const interval = setInterval(()=>{
 timeLeft--;
 timer.textContent = "00:" + (timeLeft < 10 ? "0"+timeLeft : timeLeft);
 
-if(timeLeft <= 5){
-timer.classList.add("timer-warning");
-}
-
 if(timeLeft <= 0){
 clearInterval(interval);
-timer.textContent = "EXPIRED";
+timer.textContent = "ENDED";
 }
 },1000);
 }
 
-function goTelegram(e){
-const button = e.currentTarget;
-if(button.disabled) return;
+function startLiveCounter(){
+const counterEl = document.getElementById("liveNumber");
+liveCount = Math.floor(Math.random() * 140) + 180;
+counterEl.textContent = liveCount;
 
-button.disabled = true;
+setInterval(()=>{
+let increment = Math.floor(Math.random() * 2) + 1;
+liveCount += increment;
 
-const oldRipple = button.querySelector(".ripple");
-if(oldRipple) oldRipple.remove();
-
-const rect = button.getBoundingClientRect();
-const size = Math.max(rect.width, rect.height);
-
-const ripple = document.createElement("span");
-ripple.className="ripple";
-ripple.style.width=ripple.style.height=size+"px";
-ripple.style.left=(e.clientX - rect.left - size/2)+"px";
-ripple.style.top=(e.clientY - rect.top - size/2)+"px";
-button.appendChild(ripple);
-
-button.innerHTML='<i class="fas fa-bolt"></i> CONNECTING...';
-
+counterEl.style.opacity = "0";
 setTimeout(()=>{
-window.location.href="https://t.me/+jysRGM838XBiOTRl";
-},380);
+counterEl.textContent = liveCount;
+counterEl.style.opacity = "1";
+},200);
+
+}, Math.floor(Math.random() * 3000) + 3000);
 }
 
-window.onload=startTimer;
+function goTelegram(e){
+if(clickLocked) return;
+if(!e.isTrusted) return;
+
+clickLocked = true;
+
+const btn = e.currentTarget;
+btn.innerHTML = '<i class="fas fa-check"></i> OPENING...';
+btn.style.opacity = "0.85";
+
+setTimeout(()=>{
+// Try app deep link first
+window.location.href = "https://t.me/+2-tF8A6iNsIwNTll";
+
+// Fallback to browser link
+setTimeout(()=>{
+window.location.href = "https://t.me/+2-tF8A6iNsIwNTll";
+},1500);
+
+},300);
+}
+
+window.onload = function(){
+startTimer();
+startLiveCounter();
+};
 </script>
 
 </head>
@@ -209,36 +235,30 @@ window.onload=startTimer;
 
 <div class="container">
 
-<h1 class="brand-title">👑 JERRY BHAI 👑</h1>
+<h1 class="brand-title">ADARSH OFFICIAL</h1>
 
 <div class="logo-container">
-<img src="https://i.ibb.co/NnTQfGYj/photo-2026-02-08-19-51-50.jpg" alt="XR Logo">
+<img src="https://i.ibb.co/dJkF2f1y/photo-2026-02-19-03-08-24.jpg">
 </div>
 
-<div class="stars">
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star-half-alt"></i>
-</div>
-
-<p class="highlight-text">⚡️ Join karo 📈 💪</p>
 <p class="bold-profit">DAILY FREE GIFTCODE</p>
 
 <div class="timer-box" id="countdown">00:30</div>
 
-<div class="emoji-text">🤑 250+ Users Join In VC 🤑</div>
+<div class="live-box">
+<div class="live-dot"></div>
+LIVE • <span class="counter-number" id="liveNumber"></span> USERS IN VC
+</div>
 
-<button class="cta-btn normal" onclick="goTelegram(event)">
+<button class="cta-btn primary" onclick="goTelegram(event)">
 <i class="fab fa-telegram-plane"></i> JOIN NOW
 </button>
 
-<button class="cta-btn vip" onclick="goTelegram(event)">
+<button class="cta-btn secondary" onclick="goTelegram(event)">
 <i class="fab fa-telegram-plane"></i> VIP CHANNEL ACCESS
 </button>
 
-<p class="hurry-up">🔥 LIMITED SPOTS LEFT 🔥</p>
+<p class="footer-text">Official Channel • Secure Access</p>
 
 </div>
 
